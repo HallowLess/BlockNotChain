@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlockThis</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 62.5vw;
+            background-color: rgb(0, 255, 255);
+        }
+
+        .block {
+            width: 25vw;
+            height: 25vw;
+            background-color: rgb(0, 0, 255);
+            margin: 1vw 1vw 1vw 0vw;
+        }
+
+        .rectangle {
+            width: 60vw;
+            height: 25vw;
+            background-color: rgb(128, 0, 128);
+            margin: 1vw 1vw 1vw 0vw;
+        }
+
+        .block:hover{
+            background-color: rgb(255, 174, 0);
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="block" style="border: 0.5vw solid rgb(0, 0, 255)"></div>
+            <div class="block" style="border: 0.5vw solid rgb(0, 0, 255)"></div>
+        </div>
+        <div class="block" style="border: 0.5vw solid rgb(0, 0, 0)"></div>
+        <div class="rectangle">
+            <div class="block" style="background-color:rgb(255, 0, 0)"></div>
+        </div>
+        <div class="rectangle" style="background-color:rgb(0, 255, 0)"></div>
+    </body>
+</head>
+
+</html>
