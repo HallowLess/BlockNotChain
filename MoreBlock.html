@@ -4,15 +4,25 @@
 <Head>
     <title>Block fever</title>
     <style>
+        .center {
+            height: calc(100vh - 2 * 2em - 8px - 6px);
+        }
+
+        .center div {
+            display: inline-block;
+            height: 100%;
+            vertical-align: top;
+        }
+
         #a {
-            display: inline-flex;
+            display: inline-block;
             width: 60vw;
             height: 20vh;
             background-color: greenyellow
         }
 
         #b {
-            display: inline-flex;
+            display: inline-block;
             width: 30vw;
             height: 20vh;
             background-color: greenyellow;
@@ -26,33 +36,37 @@
         }
 
         #d {
+            display: block;
             width: 40vw;
             height: 12.5vh;
             background-color: blue;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
+
         }
 
         #e {
+            display: block;
             width: 40vw;
             height: 12.5vh;
             background-color: blue;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
         }
 
         #f {
+            display: block;
             width: 40vw;
             height: 35vh;
             background-color: blue;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
+
         }
 
         #g {
             width: 25vw;
             height: 25vh;
             background-color: red;
+            position: absolute;
+            right: 0;
 
         }
 
@@ -60,6 +74,8 @@
             width: 25vw;
             height: 35vh;
             background-color: red;
+            position: absolute;
+            right: 0;
         }
 
         #i {
@@ -71,27 +87,22 @@
 </Head>
 
 <body>
-    <div>
+    <header>
         <div id="a"></div>
         <div id="b"></div>
-    </div>
+    </header>
 
-    <div id="c"></div>
-
-    <div>
+    <div class="center">
+        <div id="c"></div>
         <div id="d"></div>
         <div id="e"></div>
         <div id="f"></div>
-    </div>
-
-    <div>
         <div id="g"></div>
         <div id="h"></div>
     </div>
-
-    <div>
+    <footer>
         <div id="i"></div>
-    </div>
+    </footer>
 </body>
 
 </html>
